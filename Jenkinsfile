@@ -1,4 +1,3 @@
-```groovy
 pipeline {
     agent any
 
@@ -43,8 +42,7 @@ pipeline {
             echo 'Success. Test the site at http://localhost:8086 on the Docker host.'
         }
         failure {
-            echo 'Pipeline failed. Open the failed build Console Output and inspect the first error.'
+            echo 'Pipeline failed. Check the Console Output for the first error.'
         }
     }
 }
-```
