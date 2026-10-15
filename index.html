@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="A hands-on DevOps learning project exploring Git, Docker, Jenkins, and Kubernetes from code to deployment." />
+  <title>DevOps Lab — Build. Automate. Deploy.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="DevOps Lab home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 15.2a4.3 4.3 0 0 1 .8-8.5A7 7 0 0 1 18 8.4a3.5 3.5 0 1 1 .4 6.9H4Z" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>DevOps Lab<small>Build · Automate · Deploy</small></span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks"><a href="#home">Home</a><a href="#toolchain">Toolchain</a><a href="#workflow">Workflow</a><a href="#preview">Quick Preview</a><a href="#resources">Resources</a></div>
+      <a class="btn btn-primary" href="#workflow">Get Started <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow"><span class="pulse"></span> HANDS-ON DEVOPS PROJECT</span>
+          <h1>From Code to Cloud.<br /><span class="gradient-text">Learn DevOps by Doing.</span></h1>
+          <p class="hero-copy">Explore the tools that power modern software delivery. Start with Git, package a website with Docker, automate your pipeline with Jenkins, and orchestrate containers with Kubernetes.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#workflow">Explore the Journey <span aria-hidden="true">→</span></a><a class="btn btn-ghost" href="https://github.com/HarshalNRaj/devops-site" target="_blank" rel="noreferrer"><span aria-hidden="true">⌘</span> View on GitHub</a></div>
+          <div class="trust-row"><span><span class="mini-icon">⌘</span> Learn by building</span><span><span class="mini-icon">⚡</span> Practical workflow</span><span><span class="mini-icon">◈</span> Deployment focused</span></div>
+        </div>
+        <div class="visual reveal" aria-label="Illustration of the DevOps toolchain">
+          <div class="orbit one"></div><div class="orbit two"></div>
+          <div class="core"><div class="infinity" aria-hidden="true">∞</div><div class="core-label">DEV&nbsp; / &nbsp;OPS</div></div>
+          <div class="tool-float git"><span class="symbol">⑂</span><span>Git &amp; GitHub</span></div>
+          <div class="tool-float docker"><span class="symbol">▦</span><span>Docker</span></div>
+          <div class="tool-float jenkins"><span class="symbol">⚙</span><span>Jenkins CI/CD</span></div>
+          <div class="tool-float kube"><span class="symbol">✳</span><span>Kubernetes</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="toolchain">
+      <div class="container">
+        <div class="section-head reveal"><div class="kicker">The toolchain</div><h2>Four tools. One connected workflow.</h2><p>Each tool has a job. Together, they help move code from your laptop to a reliable deployment.</p></div>
+        <div class="tool-grid">
+          <article class="tool-card reveal" style="--glow:rgba(255,110,82,.2)"><div class="tool-symbol">⑂</div><h3>Git &amp; GitHub</h3><p>Track changes, manage versions, and share your source code in a repository.</p><a class="card-link" href="https://github.com/HarshalNRaj/devops-site" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></article>
+          <article class="tool-card reveal" style="--glow:rgba(54,217,255,.2)"><div class="tool-symbol">▦</div><h3>Docker</h3><p>Package your website and its runtime into a portable container image.</p><a class="card-link" href="https://docs.docker.com/get-started/" target="_blank" rel="noreferrer">Explore Docker <span>↗</span></a></article>
+          <article class="tool-card reveal" style="--glow:rgba(255,115,95,.2)"><div class="tool-symbol">⚙</div><h3>Jenkins</h3><p>Automate repetitive build, test, and delivery tasks with a pipeline.</p><a class="card-link" href="https://www.jenkins.io/doc/" target="_blank" rel="noreferrer">Explore Jenkins <span>↗</span></a></article>
+          <article class="tool-card reveal" style="--glow:rgba(143,99,255,.2)"><div class="tool-symbol">✳</div><h3>Kubernetes</h3><p>Manage container replicas, service discovery, and recovery from failures.</p><a class="card-link" href="https://kubernetes.io/docs/home/" target="_blank" rel="noreferrer">Explore Kubernetes <span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow-section" id="workflow">
+      <div class="container">
+        <div class="section-head reveal"><div class="kicker">Your project roadmap</div><h2>A practical path from commit to container.</h2><p>Follow the stages in order. Validate each stage before moving to the next one.</p></div>
+        <div class="flow-grid">
+          <article class="flow-step reveal"><div class="step-num">01</div><h3>Version</h3><p>Create a Git repository and push your code to GitHub.</p></article>
+          <article class="flow-step reveal"><div class="step-num">02</div><h3>Build</h3><p>Create a responsive HTML and CSS website.</p></article>
+          <article class="flow-step reveal"><div class="step-num">03</div><h3>Containerize</h3><p>Use Docker and Nginx to run the site locally.</p></article>
+          <article class="flow-step reveal"><div class="step-num">04</div><h3>Automate</h3><p>Use a Jenkins pipeline to repeat build steps.</p></article>
+          <article class="flow-step reveal"><div class="step-num">05</div><h3>Orchestrate</h3><p>Deploy replicas and expose the app with Kubernetes.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preview">
+      <div class="container preview-grid">
+        <div class="terminal reveal" aria-label="Example Dockerfile code preview"><div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="terminal-title">Quick Preview / Dockerfile</span></div><pre><span class="code-purple"># Start with a small Nginx image</span>
+<span class="code-blue">FROM</span> nginx:alpine
+
+<span class="code-purple"># Copy the website into Nginx</span>
+<span class="code-blue">COPY</span> index.html /usr/share/nginx/html/index.html
+
+<span class="code-purple"># Document the web port</span>
+<span class="code-blue">EXPOSE</span> 80
+
+<span class="code-green"># Build and run your image locally</span>
+<span class="code-blue"># docker build -t devops-site .</span>
+<span class="code-blue"># docker run -p 8085:80 devops-site</span></pre></div>
+        <div class="preview-copy reveal"><span class="ready-tag">✦ LEARN BY BUILDING</span><h2>Make every concept a working result.</h2><p>This project is designed as a learning journey: understand the command, run it, inspect the output, and only then move forward.</p><ul class="check-list"><li><span>✓</span> Keep your code in GitHub</li><li><span>✓</span> Build and test a Docker image</li><li><span>✓</span> Automate steps with a Jenkinsfile</li><li><span>✓</span> Explore Kubernetes deployments</li></ul><a class="btn btn-primary" href="https://github.com/HarshalNRaj/devops-site" target="_blank" rel="noreferrer">Open Project Repository <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="cta" id="resources"><div class="container"><div class="cta-panel reveal"><div><div class="kicker">Ready for the next step?</div><h2>Your DevOps journey starts with one command.</h2><p>Build the foundations first. Then connect the tools into a repeatable delivery workflow—one step at a time.</p></div><a class="btn btn-primary" href="https://mevitechnologies.github.io/Docker-Kubernetics-Jenkins/" target="_blank" rel="noreferrer">Open Learning Guide <span>↗</span></a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">⌘</span><span>DevOps Lab<small>Build · Automate · Deploy</small></span></a><div class="footer-links"><a href="#toolchain">Toolchain</a><a href="#workflow">Workflow</a><a href="https://github.com/HarshalNRaj/devops-site" target="_blank" rel="noreferrer">GitHub</a><a href="https://docs.docker.com/" target="_blank" rel="noreferrer">Docs</a></div><div class="copyright">Built as a hands-on DevOps learning project · © <span id="year"></span> DevOps Lab</div></div></footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    }), { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
